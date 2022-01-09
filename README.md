@@ -15,3 +15,7 @@ jobs:
       - name: Test via install
         uses: JJ/raku-test-action@main
 ```
+
+It will install dependencies, test, and then cache installation so you don't
+have to do it again in the future. It's using the latest version of Raku,
+whatever that is at the moment.
