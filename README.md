@@ -10,8 +10,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Test via install
         uses: JJ/raku-test-action@main
 ```
