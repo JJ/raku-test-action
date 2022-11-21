@@ -3,6 +3,11 @@ description: 'Test raku modules caching dependencies'
 branding:
   icon: 'life-buoy'
   color: 'blue'
+inputs:
+  coverage:
+    description: "Will test coverage or not"
+    required: false
+    default: false
 runs:
   using: "composite"
   steps:
@@ -15,4 +20,9 @@ runs:
         path: ~/.raku/
         key: ${{ runner.os }}-${{ hashFiles('META6.json') }}
     - name: Test and install for more tests
+      if: ${{ ! inputs.coverage }}
       uses: docker://ghcr.io/jj/raku-zef-gha
+    - name: Test and install for more tests
+      if: ${{ inputs.coverage }}
+      uses: docker://ghcr.io/jj/raku-racodo-gha
+
