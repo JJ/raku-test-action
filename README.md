@@ -1,6 +1,6 @@
 # GitHub Action for testing Raku modules/distributions
 
-
+> [Available from Github Action marketplace](https://github.com/marketplace/actions/raku-test-action)
 
 Use it in your [Raku](https://raku.org) modules like so:
 
@@ -33,3 +33,15 @@ jobs:
         uses: JJ/raku-test-action@v2
 ```
 
+You can also use the `@main` if you want to be on the bleeding edge, but it's
+not totally stable.
+
+## Version history
+
+### `v2`
+
+Addresses Github-own actions deprecation
+
+### `v1`
+
+Initial release
