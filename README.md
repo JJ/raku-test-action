@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test via install
-        uses: JJ/raku-test-action@main
+        uses: JJ/raku-test-action@v2
 ```
 
 It will install dependencies, test, and then cache installation so you don't
@@ -30,6 +30,6 @@ jobs:
       - name: Test + coverage
         with:
           coverage: true
-        uses: JJ/raku-test-action@main
+        uses: JJ/raku-test-action@v2
 ```
 
