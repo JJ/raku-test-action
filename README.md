@@ -40,7 +40,11 @@ not totally stable.
 
 ### `v2`
 
-Addresses Github-own actions deprecation
+Addresses Github's-own actions deprecation.
+
+#### `v2.1`
+
+Upgrades GitHub actions
 
 ### `v1`
 
