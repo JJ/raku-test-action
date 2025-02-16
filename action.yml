@@ -12,9 +12,9 @@ runs:
   using: "composite"
   steps:
     - name: Obtains source
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Cache installed distros
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       id: meta6
       with:
         path: ~/.raku/
